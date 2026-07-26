@@ -1,0 +1,36 @@
+# QuantLab — integrated factor research + portfolio construction platform
+# Python 3.11+ (3.12 recommended).  pip install -r requirements.txt
+
+# --- Core numerics (required) ---------------------------------------------
+numpy>=1.26
+pandas>=2.1
+scipy>=1.11
+
+# --- Statistics / ML (required) -------------------------------------------
+scikit-learn>=1.4          # Ledoit-Wolf shrinkage
+statsmodels>=0.14          # Fama-MacBeth, regression diagnostics
+
+# --- Convex optimisation (required for max-Sharpe/min-var SOCP) ------------
+cvxpy>=1.4                 # every optimiser also has a SciPy/SLSQP fallback
+
+# --- Visualisation (required for reports/dashboard) -----------------------
+plotly>=5.18
+
+# --- Dashboard (optional) -------------------------------------------------
+streamlit>=1.32
+
+# --- Reporting extras (optional) ------------------------------------------
+# kaleido<1.0.0            # static PNG export for PDF/Markdown reports
+#                          # (v1.x needs a headless Chrome; v0 is self-contained)
+# reportlab>=4.0           # PDF assembly
+
+# --- Live data (optional; the platform ships an offline synthetic loader) --
+# yfinance>=0.2.40
+# pandas-datareader>=0.10
+# requests>=2.31
+# lxml>=5.0
+
+# --- Development ----------------------------------------------------------
+pytest>=8.0
+pytest-cov>=5.0
+ruff>=0.4

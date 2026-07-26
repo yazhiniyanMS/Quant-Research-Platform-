@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantlab"
+version = "1.0.0"
+description = "Integrated multi-factor research and portfolio-construction platform."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Quantitative Research" }]
+keywords = ["quant", "factors", "portfolio-optimization", "backtesting", "risk"]
+
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "scipy>=1.11",
+    "scikit-learn>=1.4",
+    "statsmodels>=0.14",
+    "cvxpy>=1.4",
+    "plotly>=5.18",
+]
+
+[project.optional-dependencies]
+data = ["yfinance>=0.2.40", "pandas-datareader>=0.10", "requests>=2.31", "lxml>=5.0"]
+dashboard = ["streamlit>=1.32"]
+reporting = ["reportlab>=4.0", "kaleido<1.0.0"]
+dev = ["pytest>=8.0", "pytest-cov>=5.0", "ruff>=0.4"]
+
+[project.scripts]
+quantlab = "quantlab.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]
