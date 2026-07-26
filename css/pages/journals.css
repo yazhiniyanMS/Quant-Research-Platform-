@@ -1,0 +1,18 @@
+/* Journals & Publications page */
+
+.journals-lede {
+  font-size: var(--text-md);
+  max-width: 62ch;
+}
+
+.journal-grid {
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 760px) {
+  .journal-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

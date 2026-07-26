@@ -23,6 +23,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.yazhiniyan.com/journals.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.yazhiniyan.com/writing.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>

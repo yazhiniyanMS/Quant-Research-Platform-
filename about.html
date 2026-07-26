@@ -32,6 +32,7 @@
   <link rel="stylesheet" href="css/components.css" />
   <link rel="stylesheet" href="css/animations.css" />
   <link rel="stylesheet" href="css/pages/page.css" />
+  <link rel="stylesheet" href="css/pages/about.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -43,6 +44,7 @@
       <nav class="nav__links" aria-label="Primary">
         <a class="nav__link" data-nav-link href="projects.html">Work</a>
         <a class="nav__link" data-nav-link href="research.html">Research</a>
+        <a class="nav__link" data-nav-link href="journals.html">Journals</a>
         <a class="nav__link" data-nav-link href="writing.html">Writing</a>
         <a class="nav__link" data-nav-link href="about.html">About</a>
         <a class="nav__link" data-nav-link href="contact.html">Contact</a>
@@ -64,6 +66,7 @@
   <nav id="mobile-nav" class="mobile-nav" data-mobile-nav data-open="false" aria-label="Mobile">
     <a class="mobile-nav__link" data-nav-link href="projects.html">Work</a>
     <a class="mobile-nav__link" data-nav-link href="research.html">Research</a>
+    <a class="mobile-nav__link" data-nav-link href="journals.html">Journals</a>
     <a class="mobile-nav__link" data-nav-link href="writing.html">Writing</a>
     <a class="mobile-nav__link" data-nav-link href="about.html">About</a>
     <a class="mobile-nav__link" data-nav-link href="contact.html">Contact</a>
@@ -72,15 +75,113 @@
   <main id="main">
     <section class="page-hero container">
       <p class="page-hero__eyebrow">About</p>
-      <h1 class="page-hero__title">Student founder, independent researcher, and computer science student.</h1>
-      <p class="page-hero__desc">I'm M. S. Yazhiniyan, a 16-year-old from India. I build Paarvai AI, research how school start times affect students and teachers, mentor other students in computer science and AI, and write on Substack.</p>
+      <h1 class="page-hero__title">I'm M. S. Yazhiniyan.</h1>
+      <p class="page-hero__desc">A 16-year-old computer science student from India, working at the intersection of AI, computer science, education, entrepreneurship, and research. I build Paarvai AI, conduct independent research, mentor other students, and write about the ideas I'm working through.</p>
+      <div class="identity-tags">
+        <span class="identity-tag">Student Founder</span>
+        <span class="identity-tag">Independent Researcher</span>
+        <span class="identity-tag">Builder</span>
+        <span class="identity-tag">Mentor</span>
+        <span class="identity-tag">Writer</span>
+      </div>
     </section>
 
-    <section class="container">
-      <div class="building-notice placeholder" data-reveal>
-        <span class="placeholder-tag">Placeholder</span>
-        <h2 class="building-notice__title">This page is being written</h2>
-        <p class="building-notice__desc">A fuller account of my background, how I got here, and what I'm working toward is coming soon.</p>
+    <!-- What I Build / Research / Write / Learn -->
+    <section class="section container" data-reveal>
+      <div class="about-blocks">
+        <div class="about-block">
+          <h2 class="about-block__title">What I Build</h2>
+          <p class="about-block__desc">I'm building Paarvai AI, a student-safety technology platform for school transportation. Alongside it, I work on smaller AI and software projects.</p>
+        </div>
+        <div class="about-block">
+          <h2 class="about-block__title">What I Research</h2>
+          <p class="about-block__desc">I conduct independent research on how school start times affect students and teachers, using literature review, survey data, and statistical analysis.</p>
+        </div>
+        <div class="about-block">
+          <h2 class="about-block__title">What I Write</h2>
+          <p class="about-block__desc">I write on Substack about technology, philosophy, learning, and personal development — thinking in public rather than waiting until ideas are finished.</p>
+        </div>
+        <div class="about-block">
+          <h2 class="about-block__title">What I'm Learning</h2>
+          <p class="about-block__desc">More computer science and AI, quantitative methods, and what it actually takes to build a student-safety product that schools can trust.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Now -->
+    <section class="section container" data-reveal>
+      <div class="section-head">
+        <p class="section-head__eyebrow">Now</p>
+        <h2 class="section-head__title">What's true right now</h2>
+      </div>
+      <div class="now-grid">
+        <div class="now-card">
+          <span class="now-card__label"><span class="status__dot"></span>Building</span>
+          <p class="now-card__desc">Paarvai AI, and smaller software experiments.</p>
+        </div>
+        <div class="now-card">
+          <span class="now-card__label"><span class="status__dot"></span>Researching</span>
+          <p class="now-card__desc">Technology, education, AI, and human behavior.</p>
+        </div>
+        <div class="now-card">
+          <span class="now-card__label"><span class="status__dot"></span>Learning</span>
+          <p class="now-card__desc">Computer science, AI, quantitative methods, and entrepreneurship.</p>
+        </div>
+        <div class="now-card">
+          <span class="now-card__label"><span class="status__dot"></span>Writing</span>
+          <p class="now-card__desc">Ideas around technology, philosophy, learning, and building.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="section container" data-reveal>
+      <div class="section-head">
+        <p class="section-head__eyebrow">Timeline</p>
+        <h2 class="section-head__title">How this has developed</h2>
+        <p class="section-head__desc">Broad markers rather than exact dates — this is a working list, not a résumé.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline__item">
+          <span class="timeline__marker">Currently</span>
+          <div class="timeline__body">
+            <span class="timeline__category">Building</span>
+            <span class="timeline__title">Building Paarvai AI</span>
+            <p class="timeline__desc">Working toward school pilots for a student-safety transportation platform.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <span class="timeline__marker">Currently</span>
+          <div class="timeline__body">
+            <span class="timeline__category">Entrepreneurship</span>
+            <span class="timeline__title">MIT Venture Innovation Program ecosystem</span>
+            <p class="timeline__desc">Developing Paarvai AI in part within the MIT VIP ecosystem.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <span class="timeline__marker">Currently</span>
+          <div class="timeline__body">
+            <span class="timeline__category">Research</span>
+            <span class="timeline__title">Independent research on school start times</span>
+            <p class="timeline__desc">Literature review, survey data collection, and statistical analysis.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <span class="timeline__marker">Currently</span>
+          <div class="timeline__body">
+            <span class="timeline__category">Mentoring</span>
+            <span class="timeline__title">Mentoring students</span>
+            <p class="timeline__desc">In computer science, AI, and research.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <span class="timeline__marker">Currently</span>
+          <div class="timeline__body">
+            <span class="timeline__category">Writing</span>
+            <span class="timeline__title">Writing on Substack</span>
+            <p class="timeline__desc">Essays on technology, philosophy, learning, and personal development.</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>

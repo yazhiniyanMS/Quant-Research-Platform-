@@ -32,6 +32,7 @@
   <link rel="stylesheet" href="css/components.css" />
   <link rel="stylesheet" href="css/animations.css" />
   <link rel="stylesheet" href="css/pages/page.css" />
+  <link rel="stylesheet" href="css/pages/work.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -43,6 +44,7 @@
       <nav class="nav__links" aria-label="Primary">
         <a class="nav__link" data-nav-link href="projects.html">Work</a>
         <a class="nav__link" data-nav-link href="research.html">Research</a>
+        <a class="nav__link" data-nav-link href="journals.html">Journals</a>
         <a class="nav__link" data-nav-link href="writing.html">Writing</a>
         <a class="nav__link" data-nav-link href="about.html">About</a>
         <a class="nav__link" data-nav-link href="contact.html">Contact</a>
@@ -64,6 +66,7 @@
   <nav id="mobile-nav" class="mobile-nav" data-mobile-nav data-open="false" aria-label="Mobile">
     <a class="mobile-nav__link" data-nav-link href="projects.html">Work</a>
     <a class="mobile-nav__link" data-nav-link href="research.html">Research</a>
+    <a class="mobile-nav__link" data-nav-link href="journals.html">Journals</a>
     <a class="mobile-nav__link" data-nav-link href="writing.html">Writing</a>
     <a class="mobile-nav__link" data-nav-link href="about.html">About</a>
     <a class="mobile-nav__link" data-nav-link href="contact.html">Contact</a>
@@ -76,11 +79,164 @@
       <p class="page-hero__desc">Paarvai AI is a student-safety technology startup focused on helping schools improve student transportation safety. Alongside it, I work on independent AI, software, and quantitative projects.</p>
     </section>
 
-    <section class="container">
-      <div class="building-notice placeholder" data-reveal>
-        <span class="placeholder-tag">Placeholder</span>
-        <h2 class="building-notice__title">Full case studies are coming soon</h2>
-        <p class="building-notice__desc">Detailed write-ups of Paarvai AI and individual projects — including problem, approach, and current status — will be added here.</p>
+    <!-- Featured Project -->
+    <section class="container" id="paarvai" data-reveal>
+      <div class="project-feature">
+        <div class="project-feature__head">
+          <div>
+            <h2 class="project-feature__name">Paarvai AI</h2>
+            <p class="project-feature__tagline">A student-safety technology platform focused on improving school transportation safety and communication between schools, students, conductors, and parents.</p>
+          </div>
+          <div class="project-feature__status-row">
+            <span class="status status--active"><span class="status__dot"></span>Building</span>
+          </div>
+        </div>
+
+        <div class="project-feature__grid">
+          <div class="project-feature__block">
+            <span class="project-feature__block-title">Overview</span>
+            <p class="project-feature__block-body">Paarvai AI is a student-safety technology platform focused on improving school transportation safety and communication between schools, students, conductors, and parents.</p>
+          </div>
+
+          <div class="project-feature__block">
+            <span class="project-feature__block-title">Problem</span>
+            <p class="project-feature__block-body">School transportation is hard to monitor in real time, which leaves gaps in attendance verification and in communication between conductors, school administration, and parents.</p>
+          </div>
+
+          <div class="project-feature__block">
+            <span class="project-feature__block-title">Product</span>
+            <p class="project-feature__block-body">The product is built around student safety and transportation monitoring — attendance verification, parent alerts, a school administration dashboard, and workflows for students and conductors.</p>
+          </div>
+
+          <div class="project-feature__block">
+            <span class="project-feature__block-title">Technology</span>
+            <p class="project-feature__block-body">Web and applied-AI technologies — the same toolkit I use across my projects.</p>
+            <div class="project-feature__tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">HTML/CSS</span>
+              <span class="tech-tag">AI</span>
+            </div>
+          </div>
+
+          <div class="project-feature__block">
+            <span class="project-feature__block-title">Current Stage</span>
+            <p class="project-feature__block-body">Actively building core product workflows and working toward school pilots. Developed in part within the MIT Venture Innovation Program ecosystem.</p>
+          </div>
+
+          <div class="project-feature__block">
+            <span class="project-feature__block-title">What I'm Learning</span>
+            <p class="project-feature__block-body">Designing for people who aren't necessarily technical — school administrators, conductors, and parents — and learning that a safety-critical product has to earn trust before it earns adoption.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Archive -->
+    <section class="section archive-section container" id="archive" data-filter-scope data-reveal>
+      <div class="section-head">
+        <p class="section-head__eyebrow">Project Archive</p>
+        <h2 class="section-head__title">Everything I'm building and studying</h2>
+        <p class="section-head__desc">A working index across the categories I spend time in. Entries without enough detail yet are marked as placeholders rather than filled in with invented specifics.</p>
+      </div>
+
+      <div class="filter-tabs" data-filter-group role="group" aria-label="Filter projects by category">
+        <button type="button" class="filter-tab" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="filter-tab" data-filter="ai" aria-pressed="false">AI</button>
+        <button type="button" class="filter-tab" data-filter="software" aria-pressed="false">Software</button>
+        <button type="button" class="filter-tab" data-filter="research" aria-pressed="false">Research</button>
+        <button type="button" class="filter-tab" data-filter="quant-finance" aria-pressed="false">Quant / Finance</button>
+        <button type="button" class="filter-tab" data-filter="education" aria-pressed="false">Education</button>
+        <button type="button" class="filter-tab" data-filter="experiments" aria-pressed="false">Experiments</button>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="card" data-category="software ai">
+          <div class="card__top">
+            <span class="card__category">Software · AI</span>
+            <span class="card__year">Ongoing</span>
+          </div>
+          <h3 class="card__title">Paarvai AI</h3>
+          <p class="card__desc">Student-safety platform for school transportation — attendance, alerts, and administration workflows.</p>
+          <div class="archive-card__tech project-feature__tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">TypeScript</span>
+          </div>
+          <div class="card__foot">
+            <span class="status status--active"><span class="status__dot"></span>Building</span>
+            <a class="card__link" href="#paarvai">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="research">
+          <div class="card__top">
+            <span class="card__category">Research</span>
+            <span class="card__year">Ongoing</span>
+          </div>
+          <h3 class="card__title">School Start Times</h3>
+          <p class="card__desc">Independent research into how school start times influence students and teachers.</p>
+          <div class="archive-card__tech project-feature__tech">
+            <span class="tech-tag">Survey Design</span>
+            <span class="tech-tag">Statistics</span>
+          </div>
+          <div class="card__foot">
+            <span class="status">In progress</span>
+            <a class="card__link" href="research.html">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+          </div>
+        </article>
+
+        <article class="card" data-category="education">
+          <div class="card__top">
+            <span class="card__category">Education</span>
+            <span class="card__year">Ongoing</span>
+          </div>
+          <h3 class="card__title">Mentoring</h3>
+          <p class="card__desc">Mentoring other students in computer science, AI, and research.</p>
+          <div class="card__foot">
+            <span class="status">Ongoing</span>
+            <a class="card__link" href="about.html">View project <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+          </div>
+        </article>
+
+        <article class="card placeholder" data-category="ai">
+          <div class="card__top">
+            <span class="card__category">AI</span>
+            <span class="card__year">Ongoing</span>
+          </div>
+          <span class="placeholder-tag">Placeholder</span>
+          <h3 class="card__title">Applied AI Experiments</h3>
+          <p class="card__desc">Independent AI projects. Individual write-ups will be added here as they firm up.</p>
+          <div class="card__foot">
+            <span class="status">Exploratory</span>
+          </div>
+        </article>
+
+        <article class="card placeholder" data-category="quant-finance">
+          <div class="card__top">
+            <span class="card__category">Quant / Finance</span>
+            <span class="card__year">Ongoing</span>
+          </div>
+          <span class="placeholder-tag">Placeholder</span>
+          <h3 class="card__title">Quant &amp; Finance Projects</h3>
+          <p class="card__desc">Exploratory work at the intersection of data, markets, and financial technology.</p>
+          <div class="card__foot">
+            <span class="status">Exploratory</span>
+          </div>
+        </article>
+
+        <article class="card placeholder" data-category="experiments">
+          <div class="card__top">
+            <span class="card__category">Experiments</span>
+            <span class="card__year">Ongoing</span>
+          </div>
+          <span class="placeholder-tag">Placeholder</span>
+          <h3 class="card__title">Smaller Experiments</h3>
+          <p class="card__desc">Smaller technical prototypes that don't warrant their own project page yet.</p>
+          <div class="card__foot">
+            <span class="status">Exploratory</span>
+          </div>
+        </article>
       </div>
     </section>
   </main>

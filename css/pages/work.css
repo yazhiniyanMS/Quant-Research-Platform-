@@ -1,0 +1,15 @@
+/* Work page: featured project (editorial) + project archive */
+
+.project-feature__status-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.archive-card__tech {
+  margin-top: var(--space-1);
+}
+
+.archive-section {
+  padding-top: var(--space-8);
+}

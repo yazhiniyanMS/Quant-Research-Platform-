@@ -1,0 +1,29 @@
+/* Contact page */
+
+.contact-hero {
+  text-align: center;
+  padding-block: var(--space-9) var(--space-7);
+}
+
+.contact-hero__title {
+  font-size: var(--text-3xl);
+  max-width: 22ch;
+  margin-inline: auto;
+}
+
+@media (min-width: 640px) {
+  .contact-hero__title {
+    font-size: var(--text-4xl);
+  }
+}
+
+.contact-form-section {
+  display: grid;
+  gap: var(--space-8);
+}
+
+@media (min-width: 860px) {
+  .contact-form-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}

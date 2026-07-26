@@ -32,6 +32,7 @@
   <link rel="stylesheet" href="css/components.css" />
   <link rel="stylesheet" href="css/animations.css" />
   <link rel="stylesheet" href="css/pages/page.css" />
+  <link rel="stylesheet" href="css/pages/writing.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -43,6 +44,7 @@
       <nav class="nav__links" aria-label="Primary">
         <a class="nav__link" data-nav-link href="projects.html">Work</a>
         <a class="nav__link" data-nav-link href="research.html">Research</a>
+        <a class="nav__link" data-nav-link href="journals.html">Journals</a>
         <a class="nav__link" data-nav-link href="writing.html">Writing</a>
         <a class="nav__link" data-nav-link href="about.html">About</a>
         <a class="nav__link" data-nav-link href="contact.html">Contact</a>
@@ -64,6 +66,7 @@
   <nav id="mobile-nav" class="mobile-nav" data-mobile-nav data-open="false" aria-label="Mobile">
     <a class="mobile-nav__link" data-nav-link href="projects.html">Work</a>
     <a class="mobile-nav__link" data-nav-link href="research.html">Research</a>
+    <a class="mobile-nav__link" data-nav-link href="journals.html">Journals</a>
     <a class="mobile-nav__link" data-nav-link href="writing.html">Writing</a>
     <a class="mobile-nav__link" data-nav-link href="about.html">About</a>
     <a class="mobile-nav__link" data-nav-link href="contact.html">Contact</a>
@@ -76,13 +79,94 @@
       <p class="page-hero__desc">I write about technology, philosophy, learning, and personal development. New essays are published on Substack.</p>
     </section>
 
-    <section class="container">
-      <div class="building-notice placeholder" data-reveal>
-        <span class="placeholder-tag">Placeholder</span>
-        <h2 class="building-notice__title">The article archive is coming soon</h2>
-        <p class="building-notice__desc">This page will sync with Substack to list published essays. In the meantime, read them directly on Substack.</p>
-        <!-- TODO: replace href="#" with the real Substack URL -->
-        <a class="btn btn--secondary" href="#" title="Add Substack URL">Visit Substack <span class="btn__arrow" aria-hidden="true">→</span></a>
+    <section class="container section--tight" data-reveal>
+      <!-- TODO: replace href="#" with the real Substack URL -->
+      <a class="btn btn--secondary" href="#" title="Add Substack URL">Visit Substack <span class="btn__arrow" aria-hidden="true">→</span></a>
+    </section>
+
+    <section class="section container" data-filter-scope data-reveal>
+      <div class="section-head">
+        <p class="section-head__eyebrow">Categories</p>
+        <h2 class="section-head__title">Browse by topic</h2>
+        <p class="section-head__desc">This index will sync with Substack as essays are published. Each slot below is an honest placeholder, not a real post.</p>
+      </div>
+
+      <div class="filter-tabs" data-filter-group role="group" aria-label="Filter essays by topic">
+        <button type="button" class="filter-tab" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="filter-tab" data-filter="technology" aria-pressed="false">Technology</button>
+        <button type="button" class="filter-tab" data-filter="ai" aria-pressed="false">AI</button>
+        <button type="button" class="filter-tab" data-filter="learning" aria-pressed="false">Learning</button>
+        <button type="button" class="filter-tab" data-filter="philosophy" aria-pressed="false">Philosophy</button>
+        <button type="button" class="filter-tab" data-filter="entrepreneurship" aria-pressed="false">Entrepreneurship</button>
+        <button type="button" class="filter-tab" data-filter="personal-development" aria-pressed="false">Personal Development</button>
+      </div>
+
+      <div class="article-grid">
+        <article class="card article-card placeholder" data-category="technology">
+          <span class="placeholder-tag">Placeholder</span>
+          <h3 class="card__title">Essay title</h3>
+          <p class="card__desc">A short excerpt will appear here once this essay is published.</p>
+          <div class="article-card__meta">
+            <span>Technology</span>
+            <span>Draft</span>
+          </div>
+          <a class="card__link" href="#" title="Add Substack post URL">Read <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </article>
+
+        <article class="card article-card placeholder" data-category="ai">
+          <span class="placeholder-tag">Placeholder</span>
+          <h3 class="card__title">Essay title</h3>
+          <p class="card__desc">A short excerpt will appear here once this essay is published.</p>
+          <div class="article-card__meta">
+            <span>AI</span>
+            <span>Draft</span>
+          </div>
+          <a class="card__link" href="#" title="Add Substack post URL">Read <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </article>
+
+        <article class="card article-card placeholder" data-category="learning">
+          <span class="placeholder-tag">Placeholder</span>
+          <h3 class="card__title">Essay title</h3>
+          <p class="card__desc">A short excerpt will appear here once this essay is published.</p>
+          <div class="article-card__meta">
+            <span>Learning</span>
+            <span>Draft</span>
+          </div>
+          <a class="card__link" href="#" title="Add Substack post URL">Read <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </article>
+
+        <article class="card article-card placeholder" data-category="philosophy">
+          <span class="placeholder-tag">Placeholder</span>
+          <h3 class="card__title">Essay title</h3>
+          <p class="card__desc">A short excerpt will appear here once this essay is published.</p>
+          <div class="article-card__meta">
+            <span>Philosophy</span>
+            <span>Draft</span>
+          </div>
+          <a class="card__link" href="#" title="Add Substack post URL">Read <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </article>
+
+        <article class="card article-card placeholder" data-category="entrepreneurship">
+          <span class="placeholder-tag">Placeholder</span>
+          <h3 class="card__title">Essay title</h3>
+          <p class="card__desc">A short excerpt will appear here once this essay is published.</p>
+          <div class="article-card__meta">
+            <span>Entrepreneurship</span>
+            <span>Draft</span>
+          </div>
+          <a class="card__link" href="#" title="Add Substack post URL">Read <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </article>
+
+        <article class="card article-card placeholder" data-category="personal-development">
+          <span class="placeholder-tag">Placeholder</span>
+          <h3 class="card__title">Essay title</h3>
+          <p class="card__desc">A short excerpt will appear here once this essay is published.</p>
+          <div class="article-card__meta">
+            <span>Personal Development</span>
+            <span>Draft</span>
+          </div>
+          <a class="card__link" href="#" title="Add Substack post URL">Read <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        </article>
       </div>
     </section>
   </main>
