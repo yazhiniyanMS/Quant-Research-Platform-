@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Blocking, must load before any stylesheet to prevent a theme flash. -->
+  <script src="js/theme-init.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>M. S. Yazhiniyan — Student Founder · Independent Researcher · Builder</title>
+  <meta name="description" content="Personal site of M. S. Yazhiniyan, a 16-year-old student founder and independent researcher working across AI, computer science, education, and entrepreneurship. Building Paarvai AI and researching school start times." />
+  <meta name="author" content="M. S. Yazhiniyan" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0a0a0b" />
+
+  <!-- Open Graph / social preview. Placeholder domain — update once the site is deployed. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="M. S. Yazhiniyan" />
+  <meta property="og:title" content="M. S. Yazhiniyan — Student Founder · Independent Researcher · Builder" />
+  <meta property="og:description" content="A 16-year-old student founder and independent researcher working across AI, computer science, education, and entrepreneurship." />
+  <meta property="og:url" content="https://www.yazhiniyan.com/" />
+  <meta property="og:image" content="https://www.yazhiniyan.com/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="M. S. Yazhiniyan — Student Founder · Independent Researcher · Builder" />
+  <meta name="twitter:description" content="A 16-year-old student founder and independent researcher working across AI, computer science, education, and entrepreneurship." />
+
+  <link rel="canonical" href="https://www.yazhiniyan.com/" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="assets/site.webmanifest" />
+
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/navigation.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/home.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-site-header data-scrolled="false" data-hidden="false">
+    <div class="container nav">
+      <a class="nav__brand" href="index.html">YAZHINIYAN</a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a class="nav__link" data-nav-link href="projects.html">Work</a>
+        <a class="nav__link" data-nav-link href="research.html">Research</a>
+        <a class="nav__link" data-nav-link href="writing.html">Writing</a>
+        <a class="nav__link" data-nav-link href="about.html">About</a>
+        <a class="nav__link" data-nav-link href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav__controls">
+        <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.9 19.1l1.7-1.7M17.4 6.6l1.7-1.7"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/></svg>
+        </button>
+
+        <button type="button" class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="nav-toggle__bars"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav id="mobile-nav" class="mobile-nav" data-mobile-nav data-open="false" aria-label="Mobile">
+    <a class="mobile-nav__link" data-nav-link href="projects.html">Work</a>
+    <a class="mobile-nav__link" data-nav-link href="research.html">Research</a>
+    <a class="mobile-nav__link" data-nav-link href="writing.html">Writing</a>
+    <a class="mobile-nav__link" data-nav-link href="about.html">About</a>
+    <a class="mobile-nav__link" data-nav-link href="contact.html">Contact</a>
+  </nav>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero container">
+      <p class="hero__eyebrow"><span class="hero__eyebrow-dot"></span>Student Founder · Independent Researcher · Builder</p>
+      <h1 class="hero__title">I build things, research ideas, and try to understand what comes next.</h1>
+      <p class="hero__desc">I'm M. S. Yazhiniyan — a student founder and independent researcher working across AI, computer science, education, and entrepreneurship.</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="projects.html">Explore my work <span class="btn__arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn--secondary" href="research.html">Read my research</a>
+      </div>
+    </section>
+
+    <!-- Currently Building -->
+    <section class="section section--tight container" data-reveal>
+      <div class="section-head">
+        <p class="section-head__eyebrow">Currently</p>
+        <h2 class="section-head__title">What I'm working on right now</h2>
+      </div>
+
+      <div class="now-list">
+        <div class="now-item">
+          <div class="now-item__label">
+            <span class="now-item__index">01</span>
+            <span class="now-item__title">Paarvai AI</span>
+          </div>
+          <span class="now-item__desc">Student-safety startup, building toward school pilots</span>
+        </div>
+        <div class="now-item">
+          <div class="now-item__label">
+            <span class="now-item__index">02</span>
+            <span class="now-item__title">Independent Research</span>
+          </div>
+          <span class="now-item__desc">Studying how school start times affect students and teachers</span>
+        </div>
+        <div class="now-item">
+          <div class="now-item__label">
+            <span class="now-item__index">03</span>
+            <span class="now-item__title">AI &amp; Computer Science</span>
+          </div>
+          <span class="now-item__desc">Projects, mentoring, and continued learning</span>
+        </div>
+        <div class="now-item">
+          <div class="now-item__label">
+            <span class="now-item__index">04</span>
+            <span class="now-item__title">Writing</span>
+          </div>
+          <span class="now-item__desc">Essays on technology, philosophy, and learning</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Work -->
+    <section class="section container" id="work" data-reveal>
+      <div class="section-head">
+        <p class="section-head__eyebrow">Featured Work</p>
+        <h2 class="section-head__title">What I'm building and studying</h2>
+        <p class="section-head__desc">A selection of the work I spend most of my time on — a startup, a research project, and ongoing technical exploration.</p>
+      </div>
+
+      <div class="grid grid--2">
+        <article class="card">
+          <div class="card__top">
+            <span class="card__category">Startup · Student Safety</span>
+            <span class="card__year">Ongoing</span>
+          </div>
+          <h3 class="card__title">Paarvai AI</h3>
+          <p class="card__desc">A student-safety technology startup focused on helping schools improve student transportation safety — covering attendance verification, parent alerts, and school administration workflows.</p>
+          <div class="card__foot">
+            <span class="status status--active"><span class="status__dot"></span>Building toward school pilots</span>
+            <a class="card__link" href="projects.html">Learn more <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__top">
+            <span class="card__category">Independent Research</span>
+            <span class="card__year">Ongoing</span>
+          </div>
+          <h3 class="card__title">School Start Times</h3>
+          <p class="card__desc">Research into how school start times influence students and teachers, using literature review, survey data, and statistical analysis.</p>
+          <div class="card__foot">
+            <span class="status">In progress</span>
+            <a class="card__link" href="research.html">Read research <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__top">
+            <span class="card__category">Software · AI</span>
+            <span class="card__year">Ongoing</span>
+          </div>
+          <h3 class="card__title">AI &amp; Software Projects</h3>
+          <p class="card__desc">Independent projects across web development and applied AI, built with Python, JavaScript, TypeScript, and modern web tooling.</p>
+          <div class="card__foot">
+            <span class="status">Exploratory</span>
+            <a class="card__link" href="projects.html">View projects <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__top">
+            <span class="card__category">Quantitative · Fintech</span>
+            <span class="card__year">Ongoing</span>
+          </div>
+          <h3 class="card__title">Quant &amp; Finance Projects</h3>
+          <p class="card__desc">Exploratory work at the intersection of data, markets, and financial technology.</p>
+          <div class="card__foot">
+            <span class="status">Exploratory</span>
+            <a class="card__link" href="projects.html">View projects <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Research -->
+    <section class="section container" id="research" data-reveal>
+      <div class="section-head">
+        <p class="section-head__eyebrow">Research</p>
+        <h2 class="section-head__title">Understanding how school start times shape learning</h2>
+      </div>
+
+      <div class="research-panel">
+        <div>
+          <h3 class="research-panel__title">How school start times influence students and teachers</h3>
+          <p class="research-panel__desc">An independent research project examining the relationship between school start times and outcomes for both students and teachers — combining a literature review with original survey data and statistical analysis.</p>
+          <a class="btn btn--secondary" href="research.html">Read the full research <span class="btn__arrow" aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="research-meta">
+          <div class="research-meta__row">
+            <span class="research-meta__label">Methodology</span>
+            <span class="research-meta__value">Literature review, survey data collection, statistical analysis</span>
+          </div>
+          <div class="research-meta__row">
+            <span class="research-meta__label">Key Question</span>
+            <span class="research-meta__value">How do school start times relate to student and teacher outcomes?</span>
+          </div>
+          <div class="research-meta__row">
+            <span class="research-meta__label">Status</span>
+            <span class="research-meta__value">In progress</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Writing -->
+    <section class="section container" id="writing" data-reveal>
+      <div class="section-head">
+        <p class="section-head__eyebrow">Writing</p>
+        <h2 class="section-head__title">Essays on Substack</h2>
+        <p class="section-head__desc">I write about technology, philosophy, learning, and personal development.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <!-- TODO: replace these placeholder slots with real Substack posts (title, excerpt, link) -->
+        <article class="card writing-card placeholder">
+          <span class="placeholder-tag">Placeholder</span>
+          <h3 class="writing-card__title">Essay title</h3>
+          <p class="writing-card__desc">A short excerpt will go here once linked to Substack.</p>
+        </article>
+        <article class="card writing-card placeholder">
+          <span class="placeholder-tag">Placeholder</span>
+          <h3 class="writing-card__title">Essay title</h3>
+          <p class="writing-card__desc">A short excerpt will go here once linked to Substack.</p>
+        </article>
+        <article class="card writing-card placeholder">
+          <span class="placeholder-tag">Placeholder</span>
+          <h3 class="writing-card__title">Essay title</h3>
+          <p class="writing-card__desc">A short excerpt will go here once linked to Substack.</p>
+        </article>
+      </div>
+
+      <div class="section-foot">
+        <a class="btn btn--secondary" href="writing.html">Read on Substack <span class="btn__arrow" aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <!-- About teaser -->
+    <section class="section container" id="about" data-reveal>
+      <div class="about-teaser">
+        <p class="about-teaser__text">I'm a computer science student from India, building Paarvai AI, researching school start times, and mentoring other students in CS, AI, and research along the way.</p>
+        <a class="btn btn--secondary" href="about.html">More about me <span class="btn__arrow" aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section container" id="contact" data-reveal>
+      <div class="contact-panel">
+        <h2 class="contact-panel__title">Building something interesting?</h2>
+        <div class="contact-links">
+          <!-- TODO: replace href="#" with real destinations -->
+          <a class="contact-link contact-link--placeholder" href="#" title="Add email address">Email</a>
+          <a class="contact-link contact-link--placeholder" href="#" title="Add LinkedIn URL">LinkedIn</a>
+          <a class="contact-link contact-link--placeholder" href="#" title="Add Substack URL">Substack</a>
+          <a class="contact-link contact-link--placeholder" href="#" title="Add GitHub URL">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <div class="site-footer__top">
+      <div class="site-footer__identity">
+        <span class="site-footer__name">M. S. Yazhiniyan</span>
+        <span class="site-footer__tagline">Student Founder · Researcher · Builder</span>
+      </div>
+      <nav class="site-footer__links" aria-label="Footer">
+        <!-- TODO: replace href="#" with real destinations -->
+        <a href="#" title="Add LinkedIn URL">LinkedIn</a>
+        <a href="#" title="Add GitHub URL">GitHub</a>
+        <a href="#" title="Add Substack URL">Substack</a>
+        <a href="#" title="Add email address">Email</a>
+      </nav>
+    </div>
+    <div class="site-footer__bottom">
+      <p>&copy; 2026 M. S. Yazhiniyan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

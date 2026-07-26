@@ -1,0 +1,11 @@
+{
+  "name": "M. S. Yazhiniyan",
+  "short_name": "Yazhiniyan",
+  "icons": [
+    { "src": "/assets/favicon.svg", "type": "image/svg+xml", "sizes": "any" }
+  ],
+  "theme_color": "#0a0a0b",
+  "background_color": "#0a0a0b",
+  "display": "standalone",
+  "start_url": "/"
+}
