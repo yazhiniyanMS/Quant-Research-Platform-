@@ -1,0 +1,70 @@
+/* Reveal-on-scroll: elements start slightly offset + transparent,
+   js/reveal.js adds [data-revealed="true"] via IntersectionObserver. */
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity var(--duration-slow) var(--ease-out),
+    transform var(--duration-slow) var(--ease-out);
+}
+
+[data-reveal][data-revealed="true"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-reveal-group] > * {
+  transition-delay: calc(var(--reveal-index, 0) * 70ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Hero entrance */
+.hero__eyebrow,
+.hero__title,
+.hero__desc,
+.hero__actions {
+  opacity: 0;
+  transform: translateY(14px);
+  animation: rise var(--duration-slow) var(--ease-out) forwards;
+}
+
+.hero__eyebrow {
+  animation-delay: 40ms;
+}
+
+.hero__title {
+  animation-delay: 120ms;
+}
+
+.hero__desc {
+  animation-delay: 220ms;
+}
+
+.hero__actions {
+  animation-delay: 320ms;
+}
+
+@keyframes rise {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__eyebrow,
+  .hero__title,
+  .hero__desc,
+  .hero__actions {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}

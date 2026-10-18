@@ -1,0 +1,152 @@
+/*
+  Design tokens for the site.
+  Every color, space, and type value used elsewhere in the CSS
+  is defined here so the whole system can be retuned from one place.
+*/
+
+:root {
+  /* ---------- Typography ---------- */
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI",
+    "Inter", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "SF Mono", "JetBrains Mono", ui-monospace, "Cascadia Code",
+    Menlo, Consolas, monospace;
+
+  --text-xs: 0.75rem;    /* 12px */
+  --text-sm: 0.875rem;   /* 14px */
+  --text-base: 1rem;     /* 16px */
+  --text-md: 1.125rem;   /* 18px */
+  --text-lg: 1.375rem;   /* 22px */
+  --text-xl: 1.75rem;    /* 28px */
+  --text-2xl: 2.25rem;   /* 36px */
+  --text-3xl: 3rem;      /* 48px */
+  --text-4xl: 3.75rem;   /* 60px */
+  --text-5xl: 4.5rem;    /* 72px */
+
+  --leading-tight: 1.1;
+  --leading-snug: 1.3;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.75;
+
+  --tracking-tight: -0.03em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.04em;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* ---------- Spacing scale (4px base) ---------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+  --space-11: 12rem;
+
+  /* ---------- Layout ---------- */
+  --content-width: 1120px;
+  --content-width-narrow: 760px;
+  --gutter: var(--space-5);
+  --nav-height: 64px;
+
+  /* ---------- Radius ---------- */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 999px;
+
+  /* ---------- Motion ---------- */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+  --duration-slow: 450ms;
+
+  /* ---------- Z-index ---------- */
+  --z-nav: 100;
+  --z-overlay: 200;
+
+  /* ---------- Elevation ---------- */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06), 0 1px 1px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 24px 48px rgba(0, 0, 0, 0.12), 0 8px 16px rgba(0, 0, 0, 0.06);
+}
+
+/* ---------- Color: light theme (default) ---------- */
+:root,
+:root[data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-bg-raised: #fafafa;
+  --color-bg-inset: #f4f4f5;
+  --color-border: #e6e6e9;
+  --color-border-strong: #d4d4d8;
+
+  --color-text-primary: #111113;
+  --color-text-secondary: #52525b;
+  --color-text-tertiary: #8a8a92;
+
+  --color-accent: #2c5cff;
+  --color-accent-hover: #1c46e0;
+  --color-accent-soft: rgba(44, 92, 255, 0.08);
+
+  --color-status-active: #1a7f4e;
+  --color-status-active-bg: rgba(26, 127, 78, 0.1);
+
+  --color-focus-ring: rgba(44, 92, 255, 0.45);
+  --color-scrim: rgba(255, 255, 255, 0.72);
+}
+
+/* ---------- Color: dark theme ---------- */
+:root[data-theme="dark"] {
+  --color-bg: #0a0a0b;
+  --color-bg-raised: #131316;
+  --color-bg-inset: #19191d;
+  --color-border: #26262b;
+  --color-border-strong: #34343a;
+
+  --color-text-primary: #f4f4f5;
+  --color-text-secondary: #a1a1aa;
+  --color-text-tertiary: #6f6f78;
+
+  --color-accent: #6e8fff;
+  --color-accent-hover: #8aa3ff;
+  --color-accent-soft: rgba(110, 143, 255, 0.12);
+
+  --color-status-active: #4ade9b;
+  --color-status-active-bg: rgba(74, 222, 155, 0.12);
+
+  --color-focus-ring: rgba(110, 143, 255, 0.5);
+  --color-scrim: rgba(10, 10, 11, 0.72);
+}
+
+/* Respect system preference until the user makes an explicit choice
+   (handled by data-theme being set on <html> before first paint by js/theme.js) */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not([data-theme="dark"]) {
+    --color-bg: #0a0a0b;
+    --color-bg-raised: #131316;
+    --color-bg-inset: #19191d;
+    --color-border: #26262b;
+    --color-border-strong: #34343a;
+
+    --color-text-primary: #f4f4f5;
+    --color-text-secondary: #a1a1aa;
+    --color-text-tertiary: #6f6f78;
+
+    --color-accent: #6e8fff;
+    --color-accent-hover: #8aa3ff;
+    --color-accent-soft: rgba(110, 143, 255, 0.12);
+
+    --color-status-active: #4ade9b;
+    --color-status-active-bg: rgba(74, 222, 155, 0.12);
+
+    --color-focus-ring: rgba(110, 143, 255, 0.5);
+    --color-scrim: rgba(10, 10, 11, 0.72);
+  }
+}
